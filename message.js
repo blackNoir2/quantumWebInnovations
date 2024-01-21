@@ -6,7 +6,8 @@ const messageIconClose = document.querySelector(".message-us-icon-close");
 import { isElementValid } from "./static/js/utils.js";
 
 
-// Assuming liveChat and messageIcon are declared and accessible globally or within the same scope
+// liveChat and messageIcon and messageCloseIcon are declared globally instead of locally because they will be used by other functions
+
 
 function toggleLiveChat(showLiveChat=false) {
     const isLiveChatElementValid = isElementValid(liveChat, "Element couldn't be found1!");
