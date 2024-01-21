@@ -1,0 +1,1249 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+:root {
+
+    --box-shadow-primary: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --container-width: 88%;
+    --dark-blue: rgb(4, 4, 57);
+    --dark-red: rgb(90, 11, 11);
+    --dodger-blue: #1e90ff;
+    --element-height-relative: 70vh;
+    --font-sm: 1.25rem;
+    --light-black: rgba(0, 0, 0, 0.1);
+    --primary-font-Roboto-family: 'Roboto', sans-serif;
+    --secondary-font-2-dancing-script-family: 'Dancing Script', cursive;
+    --secondary-font-Poppins-family: 'Poppins', sans-serif;
+    --tealBlueColor: rgb(19, 98, 124);
+    --tealBlueColor2: rgb(84, 147, 168);
+    --tertiary-font-Libre-family: 'Libre Franklin', sans-serif;
+    --width-sm: 40%;
+    --primary-font-Roboto-family: 'Roboto', sans-serif;
+
+}
+
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+a {
+    color: black;
+    font-family: var(--secondary-font-Poppins-family);
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* width sizes */
+
+.width-sm {
+    width: var(--width-sm);
+}
+
+/* Color scheme styles */
+.blue-color {
+    color: rgb(5, 5, 71);
+}
+
+.dark-green {
+    color: darkgreen;
+}
+
+.white-color {
+    color: white;
+}
+
+.red {
+    color: var(--dark-red);
+}
+
+.light-red {
+    color: red !important;
+}
+
+.black-color {
+    color: black;
+}
+
+
+
+/* background colors */
+.black-bg-color {
+    background-color: black;
+}
+
+/* A type of blue color */
+.dodger-blue-bg-color {
+    background: var(--dodger-blue);
+}
+
+.red-bg-color {
+    background: var(--dark-red);
+}
+
+.ghost-white-bg-color {
+    background: ghostwhite;
+}
+
+.lavender-bg-color {
+    background: lavender;
+}
+
+.white-bg-color {
+    background-color: white;
+}
+
+
+
+
+/* background ground image */
+#contact-us {
+
+    background-image: url("static/img/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: white;
+    /* A background color to be used as a fallback */
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+
+
+}
+
+#contact-us::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    /* height: 10px;  */
+    background-color: white;
+    border-radius: 0 0 50% 50%;
+}
+
+
+#contact-us::after {
+    bottom: 0;
+}
+
+
+
+
+
+
+
+/* Flex elements */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+/* End of flex elements */
+
+
+
+/* font sizes */
+
+.font-md {
+    font-size: 1.125rem;
+}
+
+
+.font-lg {
+    font-size: 1.2rem;
+}
+
+.font-xl {
+    font-size: 2.1rem;
+}
+
+.font-xxl {
+    font-size: 3.1rem;
+}
+
+.text-captalize {
+    text-transform: capitalize !important;
+}
+
+/* End of font sizes */
+
+
+/* margin sizes */
+.margin-top-sm {
+    margin-top: 20px;
+}
+
+.margin-top-md {
+    margin-top: 60px;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 60px;
+}
+
+.margin-bottom-xlg {
+    margin-bottom: 170px;
+}
+
+.margin-top-lg {
+    margin-top: 100px;
+}
+
+.margin-right-sm {
+    margin-right: 40px;
+}
+
+.margin-top-xl {
+    margin-top: 90px;
+}
+
+.margin-right-xxl {
+    margin-right: 119px;
+}
+
+/* End of margin sizes */
+
+
+/* padding elements */
+.padding-xsm {
+    padding: 10px;
+}
+
+.padding-sm {
+    padding: 20px;
+}
+
+.padding-top-sm {
+    padding-top: 20px;
+}
+
+.padding-top-md {
+    padding-top: 60px;
+}
+
+.padding-bottom-md {
+    padding-bottom: 60px;
+}
+
+.padding-top-xl {
+    padding-top: 165px;
+}
+
+.padding-bottom-lg {
+    padding-bottom: 165px;
+}
+
+.padding-left-lg {
+    padding-left: 74px;
+}
+
+.padding-left-sm {
+    padding-left: 30px;
+}
+
+
+
+
+/* Utilies elements */
+
+.active {
+    border-bottom: 4px solid blue;
+    font-weight: bolder;
+    color: blue;
+}
+
+.bold {
+    font-weight: bolder !important;
+}
+
+.box {
+    border: 1px solid wheat;
+    padding: 10px;
+    background: blue;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.lifted {
+    transform: translateY(-10px);
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-left-align {
+    text-align: left;
+}
+
+
+.text-right-align {
+    text-align: right;
+}
+
+.right-align {
+
+    display: flex;
+    align-items: inherit;
+    justify-content: flex-end;
+
+}
+
+
+
+
+/* The logo */
+
+.logo {
+    font-family: var(--secondary-font-2-dancing-script-family);
+}
+
+.logo:hover {
+    color: var(--dodger-blue);
+}
+
+
+/* Navbar elements */
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10000000000;
+}
+
+.nav-container {
+    padding-bottom: 1px;
+    padding-top: 20px;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.nav-links a {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links>a:focus {
+    border: 1px solid white;
+    border-bottom: 4px solid white;
+    font-weight: bolder;
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 10px;
+}
+
+.nav-links a:hover {
+
+    background: white;
+    border-top: 4px solid lavender;
+    border-bottom: 4px solid lavender;
+    color: lightblue !important;
+    font-weight: bolder;
+    padding-right: 27px;
+    padding-left: 27px;
+    /* padding-top: 1px; */
+
+}
+
+.popup {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    height: auto;
+    position: fixed;
+    width: 65%;
+    margin: auto;
+    top: -10000px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: var(--primary-font-Roboto-family);
+    transition: all 2.5s ease-in-out;
+
+
+}
+
+.popup:hover {
+    opacity: 0.97;
+}
+
+
+.popup>.container {
+    display: flex;
+    background: lavender;
+}
+
+.popup-img {
+    height: 400px;
+    width: 400px;
+    border-right: 2px solid lavender;
+
+}
+
+.popup-info {
+    width: 100%;
+}
+
+.popup-info-title {
+    color: var(--dark-red);
+}
+
+.popup-info>p {
+    padding-top: 30px;
+}
+
+.popup-info>p:last-child {
+    padding-bottom: 30px;
+}
+
+.show-popup {
+    top: 70px;
+}
+
+
+.popup-info>p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.popup-input-field {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.popup-close-icon {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 10px;
+    background: var(--dark-blue);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.popup-close-icon:hover {
+    background: red;
+    transform: rotate(360deg);
+}
+
+
+
+/* Banner elements */
+
+.banner {
+
+    background: linear-gradient(-16deg, lavender 51%, white 48%, white), lavender;
+    border-bottom: 4px solid lavender;
+    border-right: 5px lavender;
+    border-right: 40px solid lavender;
+    height: auto;
+
+}
+
+.banner-container {
+    border-bottom: 4px lavender;
+}
+
+.banner-img {
+    height: 75vh;
+    width: 100%;
+}
+
+
+
+
+/* Buttons elements start here */
+
+.button-md {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.button-lg {
+
+    font-size: var(--font-sm);
+    padding: 30px;  
+}
+
+.contact-us-btn {
+    border: 1px solid rgba(4, 4, 47, 0.771);
+}
+
+.learn-more-btn:hover {
+    background: white;
+    color: black;
+    border: lavender;
+    border: 4px solid lavender;
+    transition: all 3s ease-in-out;
+
+}
+
+.learn-more-btn {
+    color: white;
+    font-weight: bolder;
+}
+
+
+.contact-us-btn:hover {
+    background: black;
+    color: white;
+    border: 3px solid green;
+    transition: all 3s ease-in-out;
+}
+
+.read-more-btn {
+    background: var(--dodger-blue);
+    font-weight: bold;
+    box-shadow: var(--box-shadow-primary);
+       
+}
+
+.read-more-btn:hover {
+    background: #8989db;
+    color: black;
+}
+
+/* The call to action section */
+.call-to-action>* {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--secondary-font-Poppins-family);
+}
+
+
+.call-to-action p {
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.subscribe-btn:hover {
+    background: var(--dodger-blue);
+}
+
+/* End call of action elements */
+
+
+
+.agency-title {
+    font-family: var(--primary-font-Roboto-family);
+}
+
+.get-quote:hover {
+    background: orange;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 1s ease-in-out;
+
+
+}
+
+blockquote {
+    font-family: var(--secondary-font-Poppins-family);
+}
+
+figure blockquote p {
+    font-size: 1.7rem;
+}
+
+/* the spinner elements */
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    display: none;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* end of spinner elements */
+
+/* 
+the contact us section */
+
+
+
+#contact-us>div {
+    width: var(--container-width);
+    margin: auto;
+    font-family: var(--secondary-font-Poppins-family);
+    font-weight: 900;
+    /* padding-top: 100px; */
+}
+
+
+
+.contact-msg>p {
+    width: 95%;
+    line-height: 1.7;
+}
+
+.contact-form {
+    width: 70%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 65px;
+    cursor: pointer;
+
+}
+
+
+
+
+#contact-form>input[type="text"],
+#contact-form>input[type="number"],
+#contact-form>input[type="email"],
+#contact-form>textarea,
+#contact-form>select {
+    background: ghostwhite;
+    font-family: var(--primary-font-Roboto-family);
+    border: 2px solid lavender;
+    font-size: var(--font-sm);
+}
+
+#contact-form>input[type="text"],
+#contact-form>input[type="number"],
+#contact-form>input[type="email"],
+#contact-form>select {
+    height: 40px;
+}
+
+#contact-form>label {
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+
+/* #contact-form-number  {
+    padding-top: 0;
+    margin-top: 0;
+} */
+
+
+
+/* 
+The testimonials section */
+
+
+.testimonal-close-icon.rotateIcon {
+    transform: rotate(360deg);
+    transition: transform 20s;
+}
+
+.testimonal-close-icon {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+#testimonials {
+    font-family: var(--primary-font-Roboto-family);
+    background: rgb(152, 190, 203);
+    padding-bottom: 200px;
+}
+
+.testimonal-close-icon:hover {
+    transform: rotate(360deg);
+}
+
+#testimonials .container {
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: auto;
+    width: 93%;
+
+}
+
+#testimonials h1 {
+    text-transform: capitalize;
+    color:gray;
+    font-weight: bolder;
+}
+.testimony-card {
+    position: relative;
+    background: white;
+    border-radius: 10%;
+    width: 32%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: auto;
+    padding: 48px;
+    margin-bottom: 74px;
+    padding-top: 89px;
+    padding-right: 45px;
+    padding-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+.testimony-card .body {
+    padding-bottom: 30px;
+}
+
+.testimony-card .body p {
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.testimonal-sidebar  {
+    width: 0;
+    position: fixed;
+    cursor: pointer;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    background: white;
+    background: lavender;
+    height: 100%;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: var(--secondary-font-Poppins-family);
+  }
+
+
+
+.testimonal-sidebar .container .testimony-card {
+    position: relative;
+    background: white;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: auto;
+    padding: 26px;
+    margin-bottom: 42px;
+    padding-top: 91px;
+    border-radius: 0;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.testimonal-sidebar .container .testimony-card .review {
+    display: flex;
+    width: 18%;
+    padding-left: 10px;
+    justify-content: space-evenly;
+    margin-right: 70px;
+
+   
+  }
+
+  @supports (-moz-appearance: none) {
+
+    /* Firefox-specific styles because it works differently in firefox and chrome */
+    .testimonal-sidebar .container .testimony-card .review {
+        width: 5%;
+    }
+}
+
+
+  .testimonal-sidebar .container .testimony-card .quote-profile-pic {
+        border-radius: 50%;
+        height: 100px;
+        border-top: 4px solid var(--dodger-blue);
+        position: absolute;
+        top: -11%;
+        left: 41%;
+        right: 50%;
+        width: 100px;
+      
+  }
+
+.quote-img{
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+  }
+
+.quote-img-1{
+    position: absolute;
+    top: -12px;
+    left: -25px;
+  
+   
+}
+
+
+.quote-img-2 {
+  position: absolute;
+  top: 91%;
+  right: -3%;
+ 
+
+}
+
+.quote-img-1,
+.quote-img-2 {
+    border: 4px solid lavender;
+    height: auto;
+    color: gray;
+}
+
+.quote-profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    border-top: 4px solid var(--dodger-blue);
+    position: absolute;
+    top: -11%;
+    left: 33%;
+    right: 50%;
+    width: 100px;
+  }
+
+
+ .review {
+  display: flex;
+  width: 9%;
+  padding-left: 10px;
+  justify-content: space-evenly;
+  margin-right: 45px;
+}
+
+
+.company-name {
+    text-align: left;
+}
+
+.company-name p:first-child {
+    font-weight: bolder;
+}
+
+
+.intro-section {
+    position: relative;
+}
+
+.intro-section > p {
+    cursor: pointer;
+    font-size: 20px;
+    width: 62%;
+    margin: auto;
+    line-height: 2.2;
+    font-weight: bold;
+    opacity: 0.5;
+  }
+
+.intro-quote-1 {
+    position: absolute;
+    top: -11px;
+    left: 200px;
+    
+    
+  }
+
+.intro-quote-2 {
+  
+    position: absolute;
+    right: 135px;
+     
+}
+
+.intro-quote-1,
+.intro-quote-2 {
+    height: 48px;
+    color: gray;
+}
+
+.testimony-card:hover {
+    opacity: 0.8;
+}
+
+.readmore-spinner {
+    display: none;
+    height: 20px;
+    width: 20px;
+    background: lightblue;
+}
+
+/* Visually hidden class for screen reader-only text */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.contact-msg>p {
+    font-size: 1.125rem;
+}
+
+
+/* the footer starts herea */
+footer .container a {
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer .container h3,
+h4 {
+    text-transform: capitalize;
+}
+
+.footer .container h3,
+h4,
+p {
+    cursor: pointer;
+}
+
+.footer .container h3,
+h4 {
+    color: lightblue;
+}
+
+
+footer .container h4 {
+    margin-bottom: 1px;
+}
+
+footer .container {
+
+    font-family: var(--secondary-font-Poppins-family);
+    margin: auto;
+    width: 90%;
+}
+
+footer .container div {
+    padding-top: 10px;
+}
+
+
+footer .container p:hover,
+footer .container a:hover {
+    color: lightblue;
+}
+
+footer .container h3 {
+    color: var(--dodger-blue);
+}
+
+footer .container a,
+footer .container p {
+    font-size: 0.9rem;
+}
+
+
+.footer-img {
+    height: 200px;
+    transform: translateX(-50px);
+    width: 200px;
+}
+
+
+.footer-social-img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+.footer-social-img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    transform: rotate(180deg);
+}
+
+
+.app {
+    border: 1px solid white;
+}
+/* The footer links */
+.legal>a,
+.resources>a,
+.policies>a,
+.community>a {
+    padding-top: 10px;
+}
+
+/* quote */
+.quote {
+    background: var(--tealBlueColor);
+    border-top: 3px solid var(--tealBlueColor);
+
+}
+
+.quote2 {
+    background: var(--tealBlueColor2);
+
+}
+
+.quote,
+.quote2 {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.quote:hover,
+.quote2:hover {
+    opacity: 0.6;
+}
+
+q {
+    display: block;
+    font-family: var(--secondary-font-Poppins-family);
+    font-size: 1.45rem;
+    color: white;
+}
+
+/* Copy right */
+.copyright {
+    height: 90px;
+    background: rgb(25, 24, 24);
+    font-family: var(--secondary-font-Poppins-family);
+}
+
+
+.pagination > a {
+    color: black;
+    font-family: var(--secondary-font-Poppins-family);
+    text-decoration: none;
+    /* border: 1px solid; */
+    padding: 8px;
+    font-family: var(--primary-font-Roboto-family);
+    font-weight: bold;
+  }
+
+  .pagination > a:nth-child(even) {
+    background: lightblue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .pagination > a:nth-child(odd) {
+    background: var(--dodger-blue);
+    color: white;
+  }
+
+  .pagination > a:hover {
+    transform: scale(1.1);
+  }
+
+  /* The live chat starts here */
+  .live-chat {
+    background: rgb(24 21 21);
+    border: 2px solid white;
+    border-radius: 1%;
+    box-shadow: var(--box-shadow-primary);
+    display: none;
+    font-family: var(--secondary-font-Poppins-family);
+    font-size: 0.9rem;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    position: fixed;
+    right: 115px;
+    top: 10px;
+    transition: opacity 10s ease-in-out; 
+    width: 23%;
+    z-index: 10;
+}
+
+/* Apply this style only to Firefox */
+@-moz-document url-prefix() {
+    .live-chat {
+        top: -10px;
+    }
+}
+
+.live-chat.active {
+    opacity: 1;
+}
+
+.live-chat .container .body > div {
+    margin-top: 12px;
+}
+
+.live-spinner-img {
+    background: 4px white solid;
+    border: 4px solid white;
+    border-radius: 50%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    width: 120px;
+}
+
+.live-chat .container {
+    background: #2a2b2b;
+    border-radius: 9%;
+    margin: auto;
+    margin-top: 2px;
+  
+}
+ 
+.chat-input {
+    width: 100%;
+}
+
+.live-chat-icon  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.live-icon {
+    background: green;
+    border-radius: 4%;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+.live-chat > .banner {
+    background: var(--dodger-blue);
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    border: 0;
+    height: 90px;
+    width: 100%;
+
+}
+
+.message-us-icon,
+.message-us-icon-close {
+    height: 60px;
+    cursor: pointer;
+    border: 4px solid var(--dodger-blue);
+    position: fixed;
+    bottom: 0;
+    background: white;
+    border-radius: 25%;
+    right: 115px;
+    box-shadow: var(--box-shadow-primary);
+  }
+
+
+.message-us-icon-close {
+    display: none;
+}
+
+/* For a smoother transition to the right */
+.message-icon, .message-icon-close {
+    transition: right 0.5s ease;
+}
+
+.message-icon:hover,
+.message-icon-close:hover {
+    
+    opacity: 0.2;
+}
+
+
+.chat-input {
+    background: black;
+    border: 1px solid lavender;
+    color: white;
+    font-size: 15px;
+    height: 50px;
+    margin-top: 1px;
+}
+
+
+::placeholder {
+    font-family: var(--primary-font-Roboto-family);
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+
+.dates {
+    gap: 10px;
+}
+
+.calender-date {
+    border-radius: 25%;
+}
+
+.chat-icons {
+    height: 15px;
+  }
+
+.img-icon {
+    height: 15px;
+}
+
+.offline-icon {
+    left: 103px;
+    position: absolute;
+    top: 82px;
+    width: 12%;
+    z-index: 1000000;
+}
+
