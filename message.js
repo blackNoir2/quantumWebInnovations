@@ -7,8 +7,6 @@ import { isElementValid } from "./static/js/utils.js";
 
 
 // liveChat and messageIcon and messageCloseIcon are declared globally instead of locally because they will be used by other functions
-
-
 function toggleLiveChat(showLiveChat=false) {
     const isLiveChatElementValid = isElementValid(liveChat, "Element couldn't be found1!");
     const EMPTY_VALUE = ''

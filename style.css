@@ -112,7 +112,6 @@ button {
 
 
 
-
 /* background ground image */
 #contact-us {
 
@@ -144,11 +143,6 @@ button {
 #contact-us::after {
     bottom: 0;
 }
-
-
-
-
-
 
 
 /* Flex elements */
@@ -337,9 +331,6 @@ button {
 
 }
 
-
-
-
 /* The logo */
 
 .logo {
@@ -435,7 +426,6 @@ nav {
 .popup-info {
     width: 100%;
 }
-
 .popup-info-title {
     color: var(--dark-red);
 }
@@ -457,6 +447,7 @@ nav {
     font-size: 1.125rem;
     line-height: 1.6;
 }
+
 
 .popup-input-field {
     width: 100%;
@@ -507,8 +498,6 @@ nav {
 }
 
 
-
-
 /* Buttons elements start here */
 
 .button-md {
@@ -525,6 +514,11 @@ nav {
 .contact-us-btn {
     border: 1px solid rgba(4, 4, 47, 0.771);
 }
+
+#contact-form-number {
+    display: none;
+}
+
 
 .learn-more-btn:hover {
     background: white;
@@ -653,9 +647,7 @@ the contact us section */
     background: white;
     padding: 65px;
     cursor: pointer;
-
 }
-
 
 
 
@@ -683,10 +675,21 @@ the contact us section */
 }
 
 
-/* #contact-form-number  {
-    padding-top: 0;
-    margin-top: 0;
-} */
+.contact-label-icon {
+    height: 20px;
+}
+/* hide the icons */
+
+.title-icon,
+.email-icon,
+.company-icon,
+.number-icon,
+.country-icon,
+.contact-number-icon,
+.contact-us-icon {
+    display: none;
+}
+
 
 
 
@@ -1247,3 +1250,7 @@ q {
     z-index: 1000000;
 }
 
+
+.number {
+    width: 100%;
+}

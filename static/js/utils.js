@@ -39,4 +39,16 @@ function isElementValid(element, errorMsg) {
 
 
 
-export {isElementValid}
+async function loadFile(filePath) {
+    try {
+        const response = await fetch(filePath);
+        const data = await response.text();
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+        throw error; 
+    }
+}
+
+
+export {isElementValid, loadFile}
